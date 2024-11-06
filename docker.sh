@@ -19,7 +19,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 sudo usermod -aG docker ubuntu
 newgrp docker 
-sudo chmod 666 /var/run/docker.sock
+sudo chmod 777 /var/run/docker.sock
 sudo systemctl start docker
 sudo systemctl enable docker
 
